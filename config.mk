@@ -17,10 +17,7 @@ PRODUCT_PACKAGES += \
     AmbientPlayProvider \
     SoundPickerPrebuilt \
     WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt \
     WellbeingPrebuilt \
-    MarkupGoogle \
-    WeatherClient
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
@@ -37,18 +34,6 @@ endif
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
-
-# Bootanimation
-ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
-     PRODUCT_COPY_FILES += vendor/pixelstyle/media/bootanimation_720.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
-     PRODUCT_COPY_FILES += vendor/pixelstyle/media/bootanimation_1080.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
-     PRODUCT_COPY_FILES += vendor/pixelstyle/media/bootanimation_1440.zip:system/media/bootanimation.zip
-else
-     $(warning "PixelStyle: TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
-     PRODUCT_COPY_FILES += vendor/pixelstyle/media/bootanimation_1080.zip:system/media/bootanimation.zip
-endif
 
 # Fonts
 PRODUCT_COPY_FILES += \
@@ -69,15 +54,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
 
-# Markup libs
-PRODUCT_COPY_FILES += \
-    vendor/pixelstyle/lib/libsketchology_native.so:system/lib/libsketchology_native.so
-
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-PRODUCT_COPY_FILES += \
-    vendor/pixelstyle/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
-endif
-
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pixelstyle/overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -86,7 +62,4 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Weather
 PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/permissions/org.pixelexperience.ambient.play.xml:system/etc/permissions/org.pixelexperience.ambient.play.xml \
-    vendor/pixelstyle/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
-    vendor/pixelstyle/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml \
-    vendor/pixelstyle/etc/default-permissions/org.pixelexperience.ambient.play.provider.xml:system/etc/default-permissions/org.pixelexperience.ambient.play.provider.xml \
-    vendor/pixelstyle/etc/default-permissions/com.google.android.markup.xml:system/etc/default-permissions/com.google.android.markup.xml
+    vendor/pixelstyle/etc/default-permissions/org.pixelexperience.ambient.play.provider.xml:system/etc/default-permissions/org.pixelexperience.ambient.play.provider.xml
