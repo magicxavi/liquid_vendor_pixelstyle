@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     GDialer \
     GMessaging \
     GCalendar \
+	GBoard \
 	FaceLock \
     GoogleContactsSyncAdapter \
     GoogleExtShared \
