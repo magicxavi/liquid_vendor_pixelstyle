@@ -91,7 +91,8 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/pixelstyle/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/pixelstyle/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-    vendor/pixelstyle/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml
+    vendor/pixelstyle/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
+	vendor/pixelstyle/etc/permissions/org.pixelexperience.screenshot.xml:system/etc/permissions/org.pixelexperience.screenshot.xml
 
 PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
