@@ -85,6 +85,9 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/default-permissions/opengapps-permissions.xml:system/etc/default-permissions/opengapps-permissions.xml
 
 PRODUCT_COPY_FILES += \
+    vendor/pixelstyle/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml
+
+PRODUCT_COPY_FILES += \
     vendor/pixelstyle/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/pixelstyle/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/pixelstyle/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
@@ -113,3 +116,6 @@ PRODUCT_COPY_FILES += \
     vendor/pixelstyle/lib64/libfrsdk.so:system/lib64/libfrsdk.so \
     vendor/pixelstyle/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
     vendor/pixelstyle/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+	
+PRODUCT_COPY_FILES += \
+    vendor/pixelstyle/addon.d/90bit_gapps.sh:system/addon.d/90bit_gapps.sh
