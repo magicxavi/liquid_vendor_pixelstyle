@@ -15,12 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    
-    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">true</bool>
-
-    <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
 
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">false</bool>
@@ -39,17 +33,7 @@
     <dimen name="config_buttonCornerRadius">4.0dip</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
-    <string-array name="config_locationProviderPackageNames" translatable="false">
-        <!-- The Google provider -->
-        <item>com.google.android.gms</item>
-        <!-- The standard AOSP fused location provider -->
-        <item>com.android.location.fused</item>
-    </string-array>
-
     <bool name="config_cellBroadcastAppLinks">true</bool>
-
-    <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
@@ -155,7 +139,4 @@
     <!-- Flag indicating whether the assist disclosure can be disabled using
          ASSIST_DISCLOSURE_ENABLED. -->
     <bool name="config_allowDisablingAssistDisclosure">true</bool>
-
-    <!-- Component name for default assistant on this device -->
-    <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
 </resources>
