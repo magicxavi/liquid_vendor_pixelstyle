@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/gapps/common-blobs.mk)
+$(call inherit-product, vendor/pixelstyle/common-blobs.mk)
 
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pixelstyle/overlay
