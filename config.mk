@@ -7,32 +7,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    AmbientPlayProvider \
     SoundPickerPrebuilt \
     WallpaperPickerGooglePrebuilt \
-    WellbeingPrebuilt \
-	GContacts \
-    GCalculator \
-    GDeskClock \
-    GDialer \
-    GMessaging \
-    GCalendar \
-	GBoard \
-	FaceLock \
-    GoogleContactsSyncAdapter \
-    GoogleExtShared \
-	AndroidPlatformServices \
-    ConfigUpdater \
-    GmsCoreSetupPrebuilt \
-    GoogleBackupTransport \
-	GoogleExtServices \
-    GoogleRestore \
-    GoogleServicesFramework \
-    Phonesky \
-    PrebuiltGmsCorePi \
-    CarrierSetup \
-	SetupWizard \
-	GoogleOneTimeInitializer
+    WellbeingPrebuilt 
 
 PRODUCT_PACKAGES += \
     MatchmakerPrebuilt
@@ -43,3 +20,5 @@ PRODUCT_PACKAGES += \
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
+	
+TARGET_MINIMAL_APPS ?= false
