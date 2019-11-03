@@ -10,9 +10,6 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     WallpaperPickerGooglePrebuilt \
     WellbeingPrebuilt 
-
-PRODUCT_PACKAGES += \
-    MatchmakerPrebuilt
 	
 PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2018
